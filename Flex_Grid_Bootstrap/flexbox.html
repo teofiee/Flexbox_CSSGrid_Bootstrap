@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<h1 align="center" style="color: skyblue;"> FLEXBOX SAMPLES</h1>
+	<meta charset="utf-8">
+	<title>Flexbox</title>
+</head>
+<body>
+	<style>
+
+	@media(min-width:768px){
+		.container-1{
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+/*
+		align-items: flex-start;		
+		flex-direction: column;
+		
+*/
+	}
+
+	}
+	.container-1 div {
+	border:3px #ccc solid;
+	padding:15px;
+	}
+
+	.box-1 {
+		flex: 1;
+		order: 1;
+		background-color: grey;
+		color: skyblue;
+	}
+	.box-2 {
+		flex: 1;
+		order: 3;
+		background-color: grey;
+		color: skyblue;
+
+	}
+	.box-3 {
+		flex: 4;
+		order: 2;
+		background-color: grey;
+		color: skyblue;
+	}	
+
+</style>
+
+<div class = "container-1">
+	<div class = "box-1">
+	<h3 style="text-align: center; font-style: oblique;"> Box One </h3>
+	<p style="text-align: center;"> Flexbox</p>
+	</div>
+
+	<div class = "box-2">
+	<h3 style="text-align: center; font-style: oblique;">  Box Two </h3>
+	<p style="text-align: center;"> Flexbox </p>
+	</div>
+
+	<div class = "box-3">
+	<h3 style="text-align: center; font-style: oblique;"> Box Three </h3>
+	<p style="text-align: center;"> Flexbox</p>
+	</div>
+	</div>
+
+
+
+</body>
+</html>

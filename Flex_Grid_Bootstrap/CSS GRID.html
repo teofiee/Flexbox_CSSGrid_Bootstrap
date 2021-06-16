@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid1 {
+  grid-area: header;
+  color: blue;
+}
+.grid2 {
+  grid-area: menu;
+  height: 400px;
+  color: orange;
+}
+.grid3 {
+  grid-area: main;
+  height: 310px;
+  color: black;
+}
+.grid4 {
+  grid-area: right;
+  height: 310px;
+  color: blanchedalmond;
+}
+.grid5 {
+  grid-area: footer;
+  color: skyblue;
+  width: ;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 5px;
+  background-color: grey;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: lightpink;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<center><h1>CSS Grid</h1></center>
+
+<div class="grid-container">
+  <div class="grid1">TITLE</div>
+  <div class="grid2">ABOUT US</div>
+  <div class="grid3">SOFTWARE ENG.</div>  
+  <div class="grid4">PRODUCTS</div>
+  <div class="grid5">CONTACT</div>
+</div>
+
+</body>
+</html>
